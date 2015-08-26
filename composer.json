@@ -1,0 +1,40 @@
+{
+  "name": "kelunik/chat-notify",
+  "authors": [
+    {
+      "name": "Niklas Keller",
+      "email": "me@kelunik.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/kelunik/chat-notify/issues"
+  },
+  "require": {
+    "amphp/aerys": "dev-master",
+    "amphp/mysql": "dev-master",
+    "rdlowrey/auryn": "^1",
+    "justinrainbow/json-schema": "^1.3",
+    "amphp/artax": "^2",
+    "kelunik/chat-services": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4",
+    "fabpot/php-cs-fixer": "^1.9"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:rdlowrey/aerys"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:kelunik/chat-services"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Kelunik\\Chat\\Integration\\": "src/"
+    }
+  }
+}
